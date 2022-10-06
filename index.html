@@ -12,11 +12,13 @@
         }
         :root {
          --bordersize: 1px;
+         --bordecolor: #ccc;
+         --grey: #555;
         }
         body{
             font-family: sans-serif;
             text-align: center;
-            color: #555;
+            color: var(--grey);
         }
         .container
         {
@@ -26,9 +28,9 @@
             justify-content: center;
         }
         .item{
-            flex: 1 0 20%;
-            border-left: var(--bordersize) dashed #ccc;
-            border-bottom: var(--bordersize) dashed #ccc;
+            flex: 2 0 100%;
+            border-left: var(--bordersize) dashed var(--bordecolor);
+            border-bottom: var(--bordersize) dashed var(--bordecolor);
             margin-left: calc(-1 * var(--bordersize));
             margin-bottom: calc(-1 * var(--bordersize));
             text-align: center;
@@ -65,7 +67,7 @@
             <div id="text-id" >
                 <h4>(Nama dosen / pengurus hima)</h4>
                 <p>(Title)</p>
-                <p>(Deskripsi: Nulla exercitation pariatur sit minim do excepteur occaecat cupidatat dolor fugiat consequat anim incididunt.)</p>
+                <p>(Deskripsi: Helo world)</p>
             </div>
         </div>
     </div>
